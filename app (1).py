@@ -21,7 +21,7 @@ with open('best_model.pkl', 'rb') as file:
 # Load the original data to fit the encoders and scaler
 # For simplicity, we are assuming 'Salary Data.csv' is available in the Colab environment.
 # In a production environment, you might load a small sample of the original data or save the fitted scalers/encoders.
-original_df = pd.read_csv('/content/Salary Data.csv')
+original_df = pd.read_csv('Salary Data.csv')
 
 # Handle missing values as done in the notebook
 for col in ['Age', 'Years of Experience', 'Salary']:
